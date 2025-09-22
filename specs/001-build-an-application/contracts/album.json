@@ -1,0 +1,28 @@
+{
+    "entity": "Album",
+    "actions": [
+        {
+            "name": "createAlbum",
+            "input": {
+                "name": "string",
+                "date": "date"
+            },
+            "output": {
+                "id": "integer",
+                "name": "string",
+                "date": "date",
+                "order": "integer"
+            }
+        },
+        {
+            "name": "reorderAlbum",
+            "input": {
+                "id": "integer",
+                "newOrder": "integer"
+            },
+            "output": {
+                "success": "boolean"
+            }
+        }
+    ]
+}

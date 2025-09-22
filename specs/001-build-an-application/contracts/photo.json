@@ -1,0 +1,29 @@
+{
+    "entity": "Photo",
+    "actions": [
+        {
+            "name": "addPhoto",
+            "input": {
+                "album_id": "integer",
+                "file_path": "string",
+                "thumbnail_path": "string"
+            },
+            "output": {
+                "id": "integer",
+                "album_id": "integer",
+                "file_path": "string",
+                "thumbnail_path": "string",
+                "created_at": "date"
+            }
+        },
+        {
+            "name": "removePhoto",
+            "input": {
+                "id": "integer"
+            },
+            "output": {
+                "success": "boolean"
+            }
+        }
+    ]
+}
